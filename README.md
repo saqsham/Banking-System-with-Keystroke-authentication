@@ -34,14 +34,14 @@ Libraries
 <br>- consists of 50 users which have typed the keyword 400 times each
 </p>
 <hr>
-<p><h4>Concepts</h4>
+<p><h3>Concepts</h3>
 (Didn't include the most basic concepts for keystoke dynamics.)
 <br>We have used  the  Keystroke concepts as mentioned here and studied them well, I recommend to read this article and also see their project/source code on github:
 <br>https://appliedmachinelearning.blog/2017/07/26/user-verification-based-on-keystroke-dynamics-python-code
 <br>We have only used a single SVM machine for this project as per our requirement, may or may not advance this project further .
 </p>
 <hr>
-<p><h4>Working</h4>
+<p><h3>Working</h3>
 So how does this captcha system works ?
 In short, first we take keyprints from a Client/user who wishes to join this bank(or may be any other institution etc.), i.e, registration process which consists of
 keystroke prints of the user by making him type the keyword ".tie5Roanl" 20 times(a minimum of 15 is recommended). 
@@ -62,7 +62,7 @@ although the lesser the bettter is said but that doesn't fit right for this part
 <br>And so the authentication system came into fruitation.
 </p>
 <hr>
-<p><h4>Refrences</h4>
+<p><h3>Refrences</h3>
 To understand how keyprints are taken refer to this repo:
 <br>https://github.com/bezoar17/bezoar17.github.io/tree/master/keystroke
 <br>I have edited the code and made it work for last character except "Enter", and removed what I didn't need for this project
