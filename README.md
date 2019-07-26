@@ -1,7 +1,6 @@
 <h2>Authentication using keystroke dynamins implemented on a banking management system via captcha concept
 <br>
 <h3>Prerequisites & languages used/required</h3>
-
 <br>Packages --V
 <br>- pymongo
 <br>- sklearn.svm
