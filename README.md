@@ -22,11 +22,5 @@ Libraries
 </p>
 <hr>
 <p><h3>Refrences</h3>
-To understand how keyprints are taken refer to this repo:
-<br>https://github.com/bezoar17/bezoar17.github.io/tree/master/keystroke
-<br>I have edited the code and made it work for last character except "Enter", and removed what I didn't need for this project
 <br>(will refer some paper in next edit)
 </p>
-<hr>
-<h4>Thank you</h4>
-<h3>For reading this far</h3>
