@@ -4,10 +4,10 @@
 
 <p>
 # rebooted <br>
-# will take time
+# will take time <br>
 # next commit undefined
-</p>
+</p> <br>
 
-# keystrokedynamics-implementation-idea
+
 Login and register with Captcha concept
 
