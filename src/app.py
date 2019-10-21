@@ -5,11 +5,11 @@ import datetime
 import importlib
 from flask import Flask, render_template, request, session, make_response
 
-spec = importlib.util.spec_from_file_location("Database", "C:/Path-to-your-file/Database.py")
+spec = importlib.util.spec_from_file_location("Database", "F:\\me lazy\\keystroke-dynamics\\src\\common\\Database.py")
 Database = importlib.util.module_from_spec(spec)
 spec.loader.exec_module(Database)
 
-spec = importlib.util.spec_from_file_location("Client", "C:/Path-to-your-file//Client.py")
+spec = importlib.util.spec_from_file_location("Client", "F:\\me lazy\\keystroke-dynamics\\src\\models\\Client.py")
 Client = importlib.util.module_from_spec(spec)
 spec.loader.exec_module(Client)
 
@@ -44,17 +44,17 @@ def redirect_home_temp(message=None):
 
     import os
 
-    r1 = open('C:/Path-to-your-file/user.csv') # Here your csv file
+    r1 = open("F:\\me lazy\\keystroke-dynamics\\src\\user.csv") # Here your csv file
     r=csv.reader(r1)
     lines = list(r)
     lines[0][0] = tempvalue
-    writer1 = open('C:/Path-to-your-file/user.csv', 'w')
+    writer1 = open("F:\\me lazy\\keystroke-dynamics\\src\\user.csv", 'w')
     writer=csv.writer(writer1)
     writer.writerows(lines)
     writer1.close()
     r1.close()
-    r1=open("C:/Path-to-your-file/user.csv")
-    fout=open("C:/Path-to-your-file/keystroke.dataset.csv","a")
+    r1=open("F:\\me lazy\\keystroke-dynamics\\src\\user.csv")
+    fout=open("F:\\me lazy\\keystroke-dynamics\\src\\user.csv\\keystroke.dataset.csv","a")
     for line in r1:
         fout.write(line)
     fout.close()
