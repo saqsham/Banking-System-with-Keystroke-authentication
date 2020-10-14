@@ -1,7 +1,5 @@
 import pymongo
 
-__author__ = 'Vaibhav'
-
 
 class Database:
     URI = "mongodb://127.0.0.1:27017"
@@ -30,8 +28,8 @@ class Database:
         return Database.DATABASE[collection].find()
 
     @staticmethod
-    def update(collection,query,values):
-        Database.DATABASE[collection].update_one(query,values)
+    def update(collection, query, values):
+        Database.DATABASE[collection].update_one(query, values)
         return Database.DATABASE[collection]
 
     @staticmethod
@@ -43,4 +41,3 @@ class Database:
     def delete_many_record(collection, query):
         # print(collection,query)
         return Database.DATABASE[collection].delete_many(query)
-

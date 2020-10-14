@@ -1,14 +1,12 @@
-__author__ = "Vaibhav"
 import uuid
-from src.common.database import Database
 import datetime
+from common.database import Database
 import random
-import uuid
 
 
 class Admin(object):
 
-    def __init__(self, _id, password, name, contact_number, gender , email , date_of_birth):
+    def __init__(self, _id, password, name, contact_number, gender, email, date_of_birth):
         self._id = _id
         self.password = password
         self.name = name
@@ -48,14 +46,14 @@ class Admin(object):
         clients = Database.find_collection(collection='Admin')
         return [cls(**clients) for clients in clients]
 
-
     @classmethod
     def all_admins(cls):
-        clients=Database.find_collection('Admin')
+        clients = Database.find_collection('Admin')
         return [cls(**client) for client in clients]
 
+
 Database.initialize()
-clients=Admin.all_admins()
+clients = Admin.all_admins()
 print(clients)
 
 # employee = Employee('EMP1000','password','Vaibhav Bhandari',9945216957,'Male','29-APR-1999')
